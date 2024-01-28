@@ -1,6 +1,9 @@
 .header {
-    height: 240px;
-    background-image: url(../../public/assets/clouds.jpg);
+    height: 20vw;
+    max-height: 300px;
+    min-height: 150px;
+    /*background-image: url(../../public/assets/clouds.jpg);*/
+    background-color: #a7a7a7;
     background-size: cover;
     width: 100%;
     margin: auto;
@@ -8,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 3vw;
+    border-radius: 2vw;
     box-shadow: 5px 5px 20px black;
 }
 
@@ -19,6 +22,7 @@
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header .space .borderProfile {
@@ -26,23 +30,27 @@
     background-image: linear-gradient(90deg, #a7a7a7 0%, #ffffff 50.52%, #505050 100%);
     border-radius: 50%;
     width: 19%;
+    max-width: 270px;
     align-items: center;
     transition: transform .3s;
+    min-width: 110px;
 }
 
-.header .space .linkedin,
-.header .space .github {
-    font-size: 30px;
+.header .space .social {
     display: flex;
     align-items: center;
     transition: transform .3s;
     color: white;
+    height:80%;
+}
+
+.header .space .social .sociallink .socialtext {
+    font-size: 130%;
     text-shadow: 2px 2px 5px black;
 }
 
-.header .space .linkedin .linkedinlink,
-.header .space .github .githublink {
-    height: 80%;
+.header .space .social .sociallink {
+    height: 100%;
     display: flex;
     flex-direction: column; /* Empilha os itens verticalmente */
     align-items: center; /* Alinha os itens no centro verticalmente */
@@ -54,27 +62,23 @@
 .header .space .borderProfile .profile {
     transition: transform .3s;
     border-radius: 50%;
-    width: 95%;
-    height: 95%;
+    width: 98%;
+    height: 98%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     margin: auto;
 }
 
-.header .space .linkedin:hover,
-.header .space .github:hover {
+.header .space .social:hover {
     transform: scale(1.1)
 }
 
-.header .space .linkedin .linkedinImage{
-    padding-top: 1vw;
-    width: 11vw;
-    height: 12vw
-}
-
-.header .space .github .gitHubImage {
-    padding-top: 1vw;
-    width: 11vw;
-    height: 12vw
+.header .space .social .sociallink .socialimage{
+    width: 60%;
+    height: 60%;
+    min-width:80px;
+    min-height: 80px;
+    max-width: 200px;
+    max-height: 200px;
 }

@@ -1,0 +1,67 @@
+.techsection {
+    min-height: 10vw;
+    background-color: #a7a7a7;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    margin-top: 2vw;
+    display: flex;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 20px black;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
+.techsection .title {
+    margin-top: 1vw;
+    font-size: 140%;
+    text-align: left;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+
+.techsection .techlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.techsection .techlist .itemlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    background-color: aqua;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.techsection .techlist .itemlist .techimage {
+    width: 10%;
+    height: 10%;
+    min-width:80px;
+    min-height: 80px;
+}
+
+.techsection .techlist .itemlist .techcontent {
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 130%;
+}
+
+.techsection .techlist .itemlist .techcontentinv {
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    text-align: right;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 130%;
+}
+
