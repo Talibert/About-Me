@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(141, 141, 141);
+}
+
+main {
+    width: 90%;
+    display: 1;
+    margin:  auto;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit
+}
