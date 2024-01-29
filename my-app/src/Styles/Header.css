@@ -2,12 +2,12 @@
     height: 20vw;
     max-height: 300px;
     min-height: 150px;
-    /*background-image: url(../../public/assets/clouds.jpg);*/
-    background-color: #a7a7a7;
+    background-color: #ffffff;
     background-size: cover;
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-top: 2vw;
+    margin-bottom: 2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,4 +1,4 @@
-.aboutsection {
+.portifoliosection {
     min-height: 10vw;
     background-color: #ffffff;
     background-size: cover;
@@ -11,8 +11,7 @@
     flex-direction: column;
 }
 
-.aboutsection .title {
-    margin-top: 1vw;
+.portifoliosection .title {
     font-size: 140%;
     text-align: left;
     margin-top: 2vw;
@@ -21,16 +20,4 @@
     margin-bottom: 2vw;
     border-bottom: 3px solid black;
     font-weight: bold;
-    
-}
-
-.aboutsection .aboutcontent {
-    overflow-wrap: break-word;
-    flex-wrap: wrap;
-    text-align: justify;
-    margin-bottom: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: 130%;
-    padding: 1vw;
 }

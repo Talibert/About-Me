@@ -7,13 +7,13 @@
 }
 
 body {
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(207, 207, 207);
     overflow-y: auto;
     min-height: 100vh;
 }
 
 main {
-    width: 90%;
+    width: 100%;
     display: 1;
     margin:  auto;
 }
