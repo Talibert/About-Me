@@ -21,5 +21,29 @@
     margin-bottom: 2vw;
     border-bottom: 3px solid black;
     font-weight: bold;
-    
+}
+
+.contactsection .contactblock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.contactblock .contactlink {
+    height: 100%;
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contactblock .contactlink .contactimage{
+    width: 60%;
+    height: 60%;
+    min-width:80px;
+    min-height: 60px;
+    max-width: 200px;
+    max-height: 200px;
 }

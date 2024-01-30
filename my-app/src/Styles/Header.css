@@ -27,58 +27,29 @@
 
 .header .space .borderProfile {
     display: flex;
-    background-image: linear-gradient(90deg, #a7a7a7 0%, #ffffff 50.52%, #505050 100%);
+    background-image: linear-gradient(90deg, #a7a7a7 0%, #000000 50.52%, #505050 100%);
     border-radius: 50%;
-    width: 19%;
+    width: 20%;
+    height: 101%;
     max-width: 270px;
     align-items: center;
     transition: transform .3s;
     min-width: 110px;
-}
-
-.header .space .social {
-    display: flex;
-    align-items: center;
-    transition: transform .3s;
-    color: white;
-    height:80%;
-}
-
-.header .space .social .sociallink .socialtext {
-    font-size: 130%;
-    text-shadow: 2px 2px 5px black;
-}
-
-.header .space .social .sociallink {
-    height: 100%;
-    display: flex;
-    flex-direction: column; /* Empilha os itens verticalmente */
-    align-items: center; /* Alinha os itens no centro verticalmente */
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
+    margin-left: 2vw;
 }
 
 .header .space .borderProfile .profile {
     transition: transform .3s;
     border-radius: 50%;
-    width: 98%;
-    height: 98%;
+    width: 95%;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
     margin: auto;
 }
 
-.header .space .social:hover {
-    transform: scale(1.1)
+.header .space .textProfile {
+    padding-right: 2vw;
 }
 
-.header .space .social .sociallink .socialimage{
-    width: 60%;
-    height: 60%;
-    min-width:80px;
-    min-height: 80px;
-    max-width: 200px;
-    max-height: 200px;
+.header .space .textProfile .text {
+    text-align: right;
 }
