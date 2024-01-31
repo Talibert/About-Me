@@ -1,6 +1,6 @@
 import "../Styles/TechnologiesSection.css"
 import TechItem from "./TechItem";
-
+import { useGlobalState } from './GlobalStateContext';
 
 export default function TechnologiesSection(props) {
     // Array que recebe as tecnologias
@@ -14,9 +14,12 @@ export default function TechnologiesSection(props) {
         { description: "O Git, junto com o GitHub, formam uma ferramenta poderosa para o versionamento de código. Com o uso dos repositórios locais e remotos, podemos desenvolver de forma individual ou em equipe de qualquer lugar.", src: "/assets/githubLogo.png", alt: "logo github", level: 80 },
       ];
     
+      // Desestruturação do hook useGlobalState para acessar a váriavel do estado do botão
+      const {isButtonActive} = useGlobalState();
+
       // Retorno do código HTML
       return (
-        <section className="techsection">
+        <section className={!isButtonActive ? "techsection" : "invisible"}>
         <h1 className="title">
             {props.title}
         </h1>

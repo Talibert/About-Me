@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../Styles/TechnologiesSection.css"
+import { useGlobalState } from './GlobalStateContext';
 
 // Criando uma função que irá receber o nome da tecnologia, a descrição, a imagem e o level
 const TechnologyItem = ({description, src, alt, level }) => {
@@ -19,10 +20,12 @@ const TechnologyItem = ({description, src, alt, level }) => {
     setIsHovered(false);
   };
 
+  const {isButtonActive} = useGlobalState();
+
   return (
     // Declaração da div do item. Os eventos onMouseEnter e onMouseLeave chamam as funções declaradas
     <div
-      className="techitem"
+      className={!isButtonActive ? "techitem" : "invisible"}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleMouseEnter}

@@ -23,7 +23,7 @@
 }
 
 .techitem {
-    transition: transform .3s;
+    transition: transform 0.3s;
     border-radius: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;

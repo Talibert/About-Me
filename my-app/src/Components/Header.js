@@ -1,24 +1,17 @@
 import "../Styles/Header.css"
-import React, {useState} from 'react';
+import ChangeButton from "./ChangeButton";
 
 export default function Header () {
-const [invisible, setInvisible] = useState(false)
-
-const makeInvisible = () => {
-    setInvisible(!invisible)
-}
 
     return(
-        <header className={`${!invisible ? "header" : "invisible"}`}>
+        <header className="header">
             <div className="space">
                 <div className="borderProfile">
                     <img className="profile"
                     src="/assets/guilhermeprofile.jpg" 
                     alt="Foto de perfil do Guilherme" />
                 </div>
-                <button onClick={makeInvisible}>
-                    Deixar invisivel
-                </button>
+                <ChangeButton/>
                 <div className="textProfile">
                     <h1 className="text">
                         Guilherme Taliberti.
@@ -34,4 +27,5 @@ const makeInvisible = () => {
         </header>
         
     )
+
 }
