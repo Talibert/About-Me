@@ -1,25 +1,33 @@
 .header {
-    height: 20vw;
-    max-height: 300px;
-    min-height: 150px;
     background-color: #ffffff;
     background-size: cover;
-    width: 90%;
     margin: auto;
-    margin-top: 2vw;
     margin-bottom: 2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 2vw;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 1px 1px 5px black;
+    height:100vh;
+}
+
+.funheader {
+    background-color: #2a2a2a;
+    background-size: cover;
+    margin: auto;
+    height:800px;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+    height:100vh;
 }
 
 .invisible {
     display: none;
 }
 
-.header .space {
+.space {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -29,12 +37,11 @@
     align-items: center;
 }
 
-.header .space .borderProfile {
+.space .borderprofile {
     display: flex;
     background-image: linear-gradient(90deg, #a7a7a7 0%, #000000 50.52%, #505050 100%);
     border-radius: 50%;
-    width: 20%;
-    height: 101%;
+    width: 20vw;
     max-width: 270px;
     align-items: center;
     transition: transform .3s;
@@ -42,7 +49,19 @@
     margin-left: 2vw;
 }
 
-.header .space .borderProfile .profile {
+.space .funborderprofile {
+    display: flex;
+    background-image: linear-gradient(90deg, #a7a7a7 0%, #000000 50.52%, #505050 100%);
+    border-radius: 50%;
+    width: 20vw;
+    max-width: 270px;
+    align-items: center;
+    transition: transform .3s;
+    min-width: 110px;
+    margin-left: 2vw;
+}
+
+.profile {
     transition: transform .3s;
     border-radius: 50%;
     width: 95%;
@@ -50,10 +69,17 @@
     margin: auto;
 }
 
-.header .space .textProfile {
+.space .textProfile {
     padding-right: 2vw;
 }
 
-.header .space .textProfile .text {
+.space .textProfile .text {
     text-align: right;
+    font-size: 2.5vw;
+}
+
+.space .textProfile .textfun {
+    text-align: right;
+    font-size: 2.5vw;
+    color: #ffffff;
 }
