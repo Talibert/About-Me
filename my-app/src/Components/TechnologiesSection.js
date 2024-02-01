@@ -19,7 +19,7 @@ export default function TechnologiesSection(props) {
 
       // Retorno do código HTML
       return (
-        <section className={!isButtonActive ? "techsection" : "invisible"}>
+        <section id="tech" className={!isButtonActive ? "techsection" : "invisible"}>
         <h1 className="title">
             {props.title}
         </h1>

@@ -13,15 +13,16 @@ const MainContent = () => {
   const { isButtonActive } = useGlobalState();
 
   return (
-    <body className={!isButtonActive ? "work" : "fun"}>
-      <Header />
-      <AboutSection title="Sobre mim" />
-      <TechnologiesSection title="Minhas Tecnologias" />
-      <GameSection title="Meus jogos"/>
-      <ArtistSection title="Meus Artistas Preferidos"/>
-      <PortifolioSection title="Acesse meu Portifólio!" />
-      <ContactSection title="Meus Contatos" />
-    </body>
+        <body className={!isButtonActive ? "work" : "fun"}>
+          <Header/>
+          <AboutSection title="Sobre mim"/>
+          <TechnologiesSection title="Minhas Tecnologias"/>
+          <GameSection title="Meus jogos"/>
+          <ArtistSection title="Meus Artistas Preferidos"/>
+          <PortifolioSection title="Acesse meu Portifólio!"/>
+          <ContactSection title="Meus Contatos"/>
+      </body>
+    
   );
 };
 

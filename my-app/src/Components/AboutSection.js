@@ -1,5 +1,6 @@
 import "../Styles/AboutSection.css"
 import { useGlobalState } from "./GlobalStateContext"
+import React from 'react';
 
 export default function AboutSection (props) {
 
@@ -9,8 +10,13 @@ export default function AboutSection (props) {
 
     const {isButtonActive} = useGlobalState()
 
+    //const fadeInAnimation = useSpring({
+        //opacity: 1,
+        //from: { opacity: 0 },
+      //});
+
     return(
-        <section className={!isButtonActive? "aboutsection" : "funaboutsection"}>
+        <section id="about" className={!isButtonActive? "aboutsection" : "funaboutsection"}>
                 <h1 className="title">
                     {props.title}
                 </h1>
@@ -24,5 +30,5 @@ export default function AboutSection (props) {
             </div>
         </section>
     )
-    
+
 }

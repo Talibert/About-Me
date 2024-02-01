@@ -17,7 +17,7 @@ export default function GameSection(props) {
 
       // Retorno do código HTML
       return (
-        <section className={!isButtonActive ? "invisible" : "gamesection"}>
+        <section id="game" className={!isButtonActive ? "invisible" : "gamesection"}>
         <h1 className="title">
             {props.title}
         </h1>

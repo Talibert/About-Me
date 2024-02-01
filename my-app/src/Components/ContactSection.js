@@ -1,5 +1,6 @@
 import "../Styles/ContactSection.css"
 import ContactItem from "./ContactItem"
+import { useGlobalState } from "./GlobalStateContext";
 
 export default function ContactSection(props) {
     const contacts = [
@@ -8,9 +9,11 @@ export default function ContactSection(props) {
         { url: "mailto:guilhermetaliberti@gmail.com", src: "/assets/gmaillogo.png", alt: "logo gmail"},
         { url: "https://wa.me/5511984390735", src: "/assets/wpplogo.png", alt: "logo wpp"},
       ];
+
+    const {isButtonActive} = useGlobalState();
     
     return (
-        <section className="contactsection">
+        <section id="contact" className={!isButtonActive? "contactsection" : "funcontactsection"}>
             <h1 className="title">
                 {props.title}
             </h1>

@@ -17,7 +17,7 @@ export default function ArtistSection(props) {
 
       // Retorno do código HTML
       return (
-        <section className={!isButtonActive ? "invisible" : "artistsection"}>
+        <section id="artist" className={!isButtonActive ? "invisible" : "artistsection"}>
         <h1 className="title">
             {props.title}
         </h1>

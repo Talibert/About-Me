@@ -2,8 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Serif', sans-serif;
     line-height: 130%;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Fonts/Roboto-Medium.ttf') format('woff');
+    /* Adicione mais formatos de fonte, se necessário */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .work {

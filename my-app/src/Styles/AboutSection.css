@@ -9,6 +9,7 @@
     border-radius: 0.5vw;
     box-shadow: 1px 1px 2px black;
     flex-direction: column;
+    transition: opacity 0.5s ease;
 }
 
 .funaboutsection {
@@ -22,6 +23,7 @@
     border-radius: 0.5vw;
     box-shadow: 1px 1px 2px rgb(0, 0, 0);
     flex-direction: column;
+    transition: opacity 0.5s ease;
 }
 
 .aboutsection .title {
@@ -35,6 +37,7 @@
     border-bottom: 1px solid black;
     font-weight: bold;
     padding-bottom: 1vw;
+    color: black;
 }
 
 .aboutsection .aboutcontent {
@@ -56,9 +59,9 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(220,220,220);
     font-weight: bold;
-    color: white; 
+    color: rgb(220, 220, 220); 
     padding-bottom: 1vw;   
 }
 
@@ -71,5 +74,5 @@
     margin-right: 2vw;
     font-size: 130%;
     padding: 1vw;
-    color: white;
+    color: rgb(220,220,220);
 }

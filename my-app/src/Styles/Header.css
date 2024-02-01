@@ -8,6 +8,7 @@
     justify-content: space-between;
     box-shadow: 1px 1px 5px black;
     height:100vh;
+    flex-direction: column;
 }
 
 .funheader {
@@ -19,8 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
     height:100vh;
+    flex-direction: column;
 }
 
 .invisible {
@@ -81,5 +83,47 @@
 .space .textProfile .textfun {
     text-align: right;
     font-size: 2.5vw;
-    color: #ffffff;
+    color: rgb(220, 220, 220)
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.navbar .navlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 2vw;
+}
+
+.navbar .navlist .navitem {
+    margin: 1vw;
+    font-size: large;
+    border-bottom: 1px solid black;
+    font-size: 2vw;
+    transition: transform 0.3s;
+}
+
+.navbar .navlist .navitem:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.navbar .navlist .naviteminv {
+    margin: 1vw;
+    font-size: large;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    font-size: 2vw;
+    transition: transform 0.3s;
+    color: rgb(220, 220, 220)
+}
+
+.navbar .navlist .naviteminv:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }

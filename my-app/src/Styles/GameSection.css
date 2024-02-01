@@ -7,7 +7,7 @@
     margin-bottom: 2vw;
     display: flex;
     border-radius: 0.5vw;
-    box-shadow: 1px 1px 1px rgb(255, 0, 0);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
     flex-direction: column;
 }
 
@@ -18,9 +18,8 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid rgb(255, 0, 0);
-    font-weight: bold;
-    color: white;
+    border-bottom: 1px solid rgb(220,220,220);
+    color: rgb(220, 220, 220);
     padding-bottom: 1vw;
 }
 
@@ -75,7 +74,8 @@
     font-weight: bold;
     white-space: nowrap;
     margin-bottom: 1vw;
-    color: white;
+    color: rgb(220,220,220);
+    font-weight: lighter;
     transform: .3s;
 }
 
