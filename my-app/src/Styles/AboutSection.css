@@ -76,3 +76,31 @@
     padding: 1vw;
     color: rgb(220,220,220);
 }
+
+@media screen and (max-width: 768px) {
+    .navlist {
+      display: none !important;
+    }
+    .aboutsection .aboutcontent {
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
+        text-align: justify;
+        margin-bottom: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 90%;
+        padding: 1vw;
+    }
+
+    .funaboutsection .aboutcontent {
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
+        text-align: justify;
+        margin-bottom: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 90%;
+        padding: 1vw;
+        color: rgb(220,220,220);
+    }
+}

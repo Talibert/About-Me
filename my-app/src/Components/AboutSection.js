@@ -10,11 +10,6 @@ export default function AboutSection (props) {
 
     const {isButtonActive} = useGlobalState()
 
-    //const fadeInAnimation = useSpring({
-        //opacity: 1,
-        //from: { opacity: 0 },
-      //});
-
     return(
         <section id="about" className={!isButtonActive? "aboutsection" : "funaboutsection"}>
                 <h1 className="title">

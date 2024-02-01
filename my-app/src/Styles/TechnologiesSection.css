@@ -94,5 +94,34 @@
     border-radius: 1vw;
 }
 
+@media screen and (max-width: 768px) {
+    .techitem .techblock {
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+        align-items: center;
+        transition: transform .3s;
+        border-radius: 1vw;
+    }
+
+    .techitem .techblock .techimage {
+        width: 50%;
+        height: 50%;
+        min-width:80px;
+        min-height: 80px;
+        margin-bottom: 2vw;
+    }
+
+    .techitem .techblock .techcontent {
+        flex-wrap: wrap;
+        text-align: justify;
+        overflow-wrap: break-word;
+        margin-bottom: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 90%;
+    }
+}
+
 
 

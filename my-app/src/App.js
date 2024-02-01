@@ -7,13 +7,14 @@ import ContactSection from "./Components/ContactSection";
 import { GlobalStateProvider, useGlobalState} from './Components/GlobalStateContext';
 import GameSection from "./Components/GameSection";
 import ArtistSection from "./Components/ArtistSection";
+import Footer from "./Components/Footer";
 
 // Componente MainContent criado para que o useGlobalState esteja dentro do escopo do GlobalStateProvider
 const MainContent = () => {
   const { isButtonActive } = useGlobalState();
 
   return (
-        <body className={!isButtonActive ? "work" : "fun"}>
+        <div className={!isButtonActive ? "work" : "fun"}>
           <Header/>
           <AboutSection title="Sobre mim"/>
           <TechnologiesSection title="Minhas Tecnologias"/>
@@ -21,7 +22,8 @@ const MainContent = () => {
           <ArtistSection title="Meus Artistas Preferidos"/>
           <PortifolioSection title="Acesse meu Portifólio!"/>
           <ContactSection title="Meus Contatos"/>
-      </body>
+          <Footer/>
+      </div>
     
   );
 };

@@ -72,3 +72,29 @@
     font-size: 1.5vw;
     margin-top: 1vw;
 }
+
+@media screen and (max-width: 768px) {
+    .artistsection .artistspace {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .artistitem .artistblock .artistimage {
+        width: 70%;
+        height: 70%;
+        border-radius: 1vw;
+        max-width: 500px;
+        max-height: 500px;
+        border-radius: 50%;
+        transition: transform .3s;
+    }
+
+    .artistitem .artistblock .description {
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+        margin-top: 1vw;
+    }
+}

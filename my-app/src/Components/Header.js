@@ -65,7 +65,7 @@ export default function Header () {
                 <ChangeButton/>
             </nav>
             <div className="space">
-                <div className={!isButtonActive? "borderprofile" : "funborderprofile"}>
+                <div className="borderprofile">
                     <img className="profile"
                     src="/assets/guilhermeprofile.jpg" 
                     alt="Foto de perfil do Guilherme" />
