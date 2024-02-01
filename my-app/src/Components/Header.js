@@ -1,4 +1,5 @@
 import "../Styles/Header.css"
+import "animate.css"
 import ChangeButton from "./ChangeButton";
 import { useGlobalState } from "./GlobalStateContext";
 import { Link, animateScroll as scroll } from 'react-scroll'
