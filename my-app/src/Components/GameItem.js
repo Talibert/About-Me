@@ -5,35 +5,37 @@ import "../Styles/GameSection.css"
 const GameItem = ({src, alt, preference}) => {
 
   // Define a variável que irá receber o useState
-  const [isHovered, setIsHovered] = useState(false);
+    //const [isHovered, setIsHovered] = useState(false);
 
-  // Função chamada quando o mouse está em cima do item
-  const handleMouseEnter = () => {
-    // seta como true o estado
-    setIsHovered(true);
-  };
+    // Função chamada quando o mouse está em cima do item
+    //const handleMouseEnter = () => {
+      // seta como true o estado
+      //setIsHovered(true);
+    //};
 
-  // Função chamada quando o mouse está fora do item
-  const handleMouseLeave = () => {
-    // Seta como false o estado
-    setIsHovered(false);
-  };
+    // Função chamada quando o mouse está fora do item
+    //const handleMouseLeave = () => {
+      // Seta como false o estado
+      //setIsHovered(false);
+    //};
+
+    //const styleHovered = {
+      //visibility: isHovered ? 'visible' : 'hidden',
+      //display: isHovered ? 'flex' : 'none'
+    //}
 
   return (
     // Declaração da div do item. Os eventos onMouseEnter e onMouseLeave chamam as funções declaradas
     <div
       className="gameitem"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleMouseEnter}
-      onTouchEnd={handleMouseEnter}
+      //onMouseEnter={handleMouseEnter}
+      //onMouseLeave={handleMouseLeave}
+      //onTouchStart={handleMouseEnter}
+      //onTouchEnd={handleMouseEnter}
     >
         <div className="gameblock">
             <img className="gameimage" src={src} alt={alt}></img>
-            <div className="preferenceblock" style={{ 
-              visibility: isHovered ? 'visible' : 'hidden',
-              display: isHovered ? 'flex' : 'none'
-            }}>
+            <div className="preferenceblock">
                 <p className="preferencetext">Preferência: {preference}%</p>
                 <div className="preferencedefault">
                     <div className="preference-meter" style={{ width: `${preference}%` }}></div>

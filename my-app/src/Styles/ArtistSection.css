@@ -39,10 +39,6 @@
     margin-bottom: 1vw;
 }
 
-.artistitem:hover {
-    background-color: #1a1a1a;;
-}
-
 .artistitem .artistblock {
     display: flex;
     flex-direction: column;
@@ -60,10 +56,6 @@
     max-height: 500px;
     border-radius: 50%;
     transition: transform .3s;
-}
-
-.artistitem .artistblock .artistimage:hover {
-    transform: scale(1.1);
 }
 
 .artistitem .artistblock .description {
@@ -96,5 +88,15 @@
         color: white;
         font-size: 5vw;
         margin-top: 1vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .artistitem .artistblock .artistimage:hover {
+        transform: scale(1.1);
+    }
+
+    .artistitem:hover {
+        background-color: #1a1a1a;;
     }
 }

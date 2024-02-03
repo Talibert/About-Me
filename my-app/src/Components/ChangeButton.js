@@ -11,7 +11,7 @@ const ChangeButton = () => {
 
   return (
     // Renderiza um botão que, ao ser clicado, chama a função toggleButton para alternar o estado global.
-    <button className="modebutton" onClick={toggleButton}>
+    <button className={!isButtonActive? "modebutton" : "modebuttoninv"} onClick={toggleButton}>
       {!isButtonActive? "Work Mode" : "Fun Mode"}
     </button>
   );
