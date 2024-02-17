@@ -6,8 +6,6 @@
     margin: auto;
     margin-bottom: 2vw;
     display: flex;
-    border-radius: 0.5vw;
-    box-shadow: 1px 1px 2px rgb(0, 0, 0);
     flex-direction: column;
 }
 
@@ -66,6 +64,31 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .artistsection {
+        min-height: 10vw;
+        background-color: #000;
+        background-size: cover;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .artistsection .title {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 2vw;
+        border-bottom: 1px solid #ffebe4;
+        font-weight: bold;
+        color: #ffebe4;
+        padding-bottom: 1vw;
+    }
+
     .artistsection .artistspace {
         display: flex;
         flex-direction: column;
@@ -85,7 +108,7 @@
 
     .artistitem .artistblock .description {
         text-align: center;
-        color: white;
+        color: #ffebe4;
         font-size: 5vw;
         margin-top: 1vw;
     }
