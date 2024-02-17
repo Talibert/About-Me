@@ -7,13 +7,20 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../Fonts/Roboto-Medium.ttf') format('woff');
-    /* Adicione mais formatos de fonte, se necessário */
+    src: url('../Fonts/Roboto-LightItalic.ttf') format('woff');
 }
+
+@font-face {
+    font-family: 'RobotoTitle';
+    src: url('../Fonts/Roboto-BoldItalic.ttf') format('woff');
+}
+
+
+
 
 .work {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(241, 241, 241);
+    background-color: #fff;
     overflow-y: auto;
     min-height: 100vh;
     width: 100%;
@@ -23,7 +30,7 @@
 
 .fun {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
+    background-color: #000;
     overflow-y: auto;
     min-height: 100vh;
     width: 100%;

@@ -93,6 +93,40 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .gamesection {
+        min-height: 10vw;
+        background-color: #000;
+        background-size: cover;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gamesection .title {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 2vw;
+        border-bottom: 1px solid rgb(220,220,220);
+        color: #ffebe4;
+        padding-bottom: 1vw;
+    }
+
+    .gameitem .gameblock .preferenceblock .preferencetext {
+        font-size: 70%;
+        font-weight: bold;
+        margin-bottom: 1vw;
+        color: #ffebe4;
+        font-weight: lighter;
+        transform: .3s;
+        text-align: center;
+    }
+
     .gamesection .gamespace {
         display: flex;
         flex-direction: column;

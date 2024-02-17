@@ -83,3 +83,55 @@
     max-width: 200px;
     max-height: 200px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .contactsection {
+        min-height: 10vw;
+        background-color: #ffffff;
+        background-size: cover;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .funcontactsection {
+        min-height: 10vw;
+        background-color: #2a2a2a;
+        background-size: cover;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contactsection .title {
+        margin-top: 1vw;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        padding-bottom: 1vw;
+        color: black;
+    }
+    
+    .funcontactsection .title {
+        margin-top: 1vw;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        border-bottom: 1px solid white;
+        font-weight: bold;
+        padding-bottom: 1vw;
+        color: rgb(220,220,220);
+    } 
+
+}

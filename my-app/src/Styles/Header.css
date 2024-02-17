@@ -49,7 +49,7 @@
     min-width: 110px;
     margin-left: 2vw;
     animation: backInUp;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .profile {
@@ -195,22 +195,46 @@
     transition: transform .3s;
     min-width: 110px;
     margin-left: 2vw;
-    margin-top: -20vw;
 }
 
 .space .textProfile .text {
     text-align: center;
-    font-size: 5vw;
+    font-size: 20px;
+    color: #000050;
 }
 
 .space .textProfile .textfun {
     text-align: center;
-    font-size: 5vw;
-    color: rgb(220, 220, 220)
+    font-size: 20px;
+    color: #ffebe4; 
 }
 
 .space .textProfile {
     margin-top: 10vw;
+}
+
+.header {
+    background-color: #ffffff;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100vh;
+    flex-direction: column;
+    background-image: linear-gradient(130deg, #000050 50%, #fff 50%);
+}
+
+.funheader {
+    background-color: #000;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100vh;
+    flex-direction: column;
+    background-image: linear-gradient(230deg, #a41e00 50%, #000 50%);
 }
 
 }
