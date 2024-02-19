@@ -25,10 +25,10 @@ export default function TechnologiesSection(props) {
         </h1>
         {/*chamada do componente TechItem*/}
         {/*map em cima do array de tecnologias*/}
-          {technologies.map((tech, index) => (
-              // Passando para o componente TechItem os dados de cada item da lista. O index é para auxiliar o React
-              <TechItem key={index} description={tech.description} src={tech.src} alt={tech.src} level={tech.level}/>
-          ))}
+        {technologies.map((tech, index) => (
+                // Passando para o componente TechItem os dados de cada item da lista. O index é para auxiliar o React
+                <TechItem key={index} description={tech.description} src={tech.src} alt={tech.src} level={tech.level}/>
+        ))}
         </section>
       );
 };
