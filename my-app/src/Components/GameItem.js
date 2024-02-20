@@ -1,39 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../Styles/GameSection.css"
 
 // Criando uma função que irá receber o nome da tecnologia, a descrição, a imagem e o level
 const GameItem = ({src, alt, preference}) => {
 
-  // Define a variável que irá receber o useState
-    //const [isHovered, setIsHovered] = useState(false);
-
-    // Função chamada quando o mouse está em cima do item
-    //const handleMouseEnter = () => {
-      // seta como true o estado
-      //setIsHovered(true);
-    //};
-
-    // Função chamada quando o mouse está fora do item
-    //const handleMouseLeave = () => {
-      // Seta como false o estado
-      //setIsHovered(false);
-    //};
-
-    //const styleHovered = {
-      //visibility: isHovered ? 'visible' : 'hidden',
-      //display: isHovered ? 'flex' : 'none'
-    //}
+        // Configuração do hook useInView para detectar a visibilidade do elemento na tela
+        const { ref, inView } = useInView({ trigger: true });
+        // Configuração do hook useAnimation para controlar as animações do framer-motion
+        const controls = useAnimation();
+        // Criando um objeto para armazenar as configurações da animação
+        const animateSettings = {
+            animate: controls,
+            initial: "hidden",
+            variants: {
+                hidden: { opacity: 0, y: 400 },
+                visible: { opacity: 1, y: 0 },
+                },
+            transition: { duration: 1}
+        }
+    
+        // useEffect que irá identificar a visibilidade do elemento e alterar sua animação
+        useEffect(() => {
+            if (inView) {
+                controls.start("visible");
+            }
+        }, [inView, controls]); // O UseEffect será chamado sempre que inView ou controls forem alterados
 
   return (
-    // Declaração da div do item. Os eventos onMouseEnter e onMouseLeave chamam as funções declaradas
     <div
       className="gameitem"
-      //onMouseEnter={handleMouseEnter}
-      //onMouseLeave={handleMouseLeave}
-      //onTouchStart={handleMouseEnter}
-      //onTouchEnd={handleMouseEnter}
+      ref={ref}
     >
-        <div className="gameblock">
+        <motion.div className="gameblock" {...animateSettings}>
             <img className="gameimage" src={src} alt={alt}></img>
             <div className="preferenceblock">
                 <p className="preferencetext">Preferência: {preference}%</p>
@@ -41,8 +41,7 @@ const GameItem = ({src, alt, preference}) => {
                     <div className="preference-meter" style={{ width: `${preference}%` }}></div>
                 </div>
             </div>
-        </div>
-        {/* no próprio css é feita a checagem de isHovered para definir a visibilidade e o display*/}
+        </motion.div>
     </div>
   );
 };

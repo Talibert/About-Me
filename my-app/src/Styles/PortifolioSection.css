@@ -11,7 +11,7 @@
 
 .funportifoliosection {
     min-height: 10vw;
-    background-color: #2a2a2a;
+    background-color: #000000;
     background-size: cover;
     width: 80%;
     margin: auto;
@@ -27,10 +27,10 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000050;
     font-weight: bold;
     padding-bottom: 1vw;
-    color: black;
+    color: #000050;
 }
 
 .funportifoliosection .title {
@@ -40,10 +40,10 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffebe4;
     font-weight: bold;
     padding-bottom: 1vw;
-    color:rgb(220,220,220);
+    color:#ffebe4;
 }
 
 @media screen and (max-width: 768px) {

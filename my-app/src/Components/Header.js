@@ -68,7 +68,7 @@ export default function Header () {
             <div className="space">
                 <div className="borderprofile">
                     <img className="profile"
-                    src="/assets/guilhermeprofile.jpg" 
+                    src="/assets/guilhermeprofile2.jpg" 
                     alt="Foto de perfil do Guilherme" />
                 </div>
                 <div className="textProfile">

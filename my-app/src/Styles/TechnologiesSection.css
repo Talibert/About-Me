@@ -16,10 +16,10 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000050;
     font-weight: bold;
     padding-bottom: 1vw;
-    color: black;
+    color: #000050;
 }
 
 .techitem {
@@ -48,6 +48,7 @@
     margin-left: 2vw;
     margin-right: 2vw;
     font-size: 130%;
+    color: #000050;
 }
 
 .techitem .techblock .techimage {
@@ -73,6 +74,7 @@
     font-size: 80%;
     font-weight: bold;
     white-space: nowrap;
+    color: #000050;
 }
 
 .techitem .levelblock .leveldefault {
@@ -154,10 +156,10 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
     .techitem:hover {
         transform: scale(1.01);
-        background-color: rgb(255, 251, 251);
+        background-color: #f9f9ff;
     }
 }
 

@@ -39,7 +39,7 @@ const TechnologyItem = ({description, src, alt, level }) => {
               hidden: { opacity: 0, x: -400 },
               visible: { opacity: 1, x: 0 },
               },
-          transition: { duration: 1, delay: 0.5 }
+          transition: { duration: 0.5}
       }
 
       const animateSettingsInv = {
@@ -49,7 +49,7 @@ const TechnologyItem = ({description, src, alt, level }) => {
             hidden: { opacity: 0, x: 400 },
             visible: { opacity: 1, x: 0 },
             },
-        transition: { duration: 1, delay: 0.75 }
+        transition: { duration: 0.75 }
     }
   
       // useEffect que irá identificar a visibilidade do elemento e alterar sua animação

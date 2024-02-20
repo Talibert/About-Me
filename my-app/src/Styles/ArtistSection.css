@@ -1,6 +1,6 @@
 .artistsection {
     min-height: 10vw;
-    background-color: #2a2a2a;
+    background-color: #000;
     background-size: cover;
     width: 80%;
     margin: auto;
@@ -16,9 +16,9 @@
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vw;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffebe4;
     font-weight: bold;
-    color: rgb(220,220,220);
+    color: #ffebe4;
     padding-bottom: 1vw;
 }
 
@@ -58,7 +58,7 @@
 
 .artistitem .artistblock .description {
     text-align: center;
-    color: white;
+    color: #ffebe4;
     font-size: 1.5vw;
     margin-top: 1vw;
 }
@@ -114,7 +114,7 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
     .artistitem .artistblock .artistimage:hover {
         transform: scale(1.1);
     }
