@@ -1,135 +1,134 @@
 .contactsection {
-    min-height: 10vw;
-    background-color: #ffffff;
-    background-size: cover;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2vw;
-    display: flex;
-    flex-direction: column;
+  min-height: 10vw;
+  background-color: #ffffff;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .funcontactsection {
-    min-height: 10vw;
-    background-color: #000;
-    background-size: cover;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2vw;
-    display: flex;
-    flex-direction: column;
+  min-height: 10vw;
+  background-color: #000;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactsection .title {
+  font-family: 'RobotoTitle', sans-serif;
+  margin-top: 1vw;
+  font-size: 140%;
+  text-align: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 1px solid #000050;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  color: #000050;
+}
+
+.funcontactsection .title {
+  font-family: 'RobotoTitle', sans-serif;
+  margin-top: 1vw;
+  font-size: 140%;
+  text-align: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 1px solid #ffebe4;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  color: #ffebe4;
+}
+
+.contactblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+.contactblock .contactlink:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.contactblock .contactlink {
+  height: 100%;
+  display: flex;
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.contactblock .contactlink .contactimage {
+  width: 60%;
+  height: 60%;
+  min-width: 30px;
+  min-height: 10px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactsection {
+    min-height: 10vw;
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+  }
+
+  .funcontactsection {
+    min-height: 10vw;
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+  }
+
+  .contactsection .title {
     margin-top: 1vw;
-    font-size: 140%;
-    text-align: left;
+    font-size: 30px;
+    text-align: center;
     margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-bottom: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 4vw;
     border-bottom: 1px solid #000050;
     font-weight: bold;
     padding-bottom: 1vw;
     color: #000050;
-}
+  }
 
-.funcontactsection .title {
+  .funcontactsection .title {
     margin-top: 1vw;
-    font-size: 140%;
-    text-align: left;
+    font-size: 30px;
+    text-align: center;
     margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-bottom: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 4vw;
     border-bottom: 1px solid #ffebe4;
     font-weight: bold;
     padding-bottom: 1vw;
     color: #ffebe4;
-}
-
-.contactblock {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2vw;
-}
-
-.contactblock .contactlink:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.3s;
-}
-
-.contactblock .contactlink {
-    height: 100%;
-    display: flex;
-    align-items: center; /* Alinha os itens no centro verticalmente */
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
-    
-}
-
-.contactblock .contactlink .contactimage{
-    width: 60%;
-    height: 60%;
-    min-width:30px;
-    min-height: 10px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-@media screen and (max-width: 768px) {
-
-    .contactsection {
-        min-height: 10vw;
-        background-color: #ffffff;
-        background-size: cover;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2vh;
-    }
-    
-    .funcontactsection {
-        min-height: 10vw;
-        background-color: #000;
-        background-size: cover;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2vh;
-    }
-    
-    .contactsection .title {
-        margin-top: 1vw;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 2vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 4vw;
-        border-bottom: 1px solid #000050;
-        font-weight: bold;
-        padding-bottom: 1vw;
-        color: #000050;
-    }
-    
-    .funcontactsection .title {
-        margin-top: 1vw;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 2vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 4vw;
-        border-bottom: 1px solid #ffebe4;
-        font-weight: bold;
-        padding-bottom: 1vw;
-        color: #ffebe4;
-    } 
-
+  }
 }

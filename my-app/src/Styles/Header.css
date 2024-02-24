@@ -1,160 +1,159 @@
 .header {
-    background-color: #ffffff;
-    background-size: cover;
-    margin: auto;
-    margin-bottom: 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 1px 5px black;
-    height:100vh;
-    flex-direction: column;
-    color: #000050
+  background-color: #ffffff;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px black;
+  height: 100vh;
+  flex-direction: column;
+  color: #000050;
 }
 
 .funheader {
-    background-color: #000;
-    background-size: cover;
-    margin: auto;
-    height:800px;
-    margin-bottom: 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 1px 5px #ffebe4; 
-    height:100vh;
-    flex-direction: column;
-    color: #ffebe4;
+  background-color: #000;
+  background-size: cover;
+  margin: auto;
+  height: 800px;
+  margin-bottom: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px #ffebe4;
+  height: 100vh;
+  flex-direction: column;
+  color: #ffebe4;
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 .space {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .space .borderprofile {
-    display: flex;
-    width: 30vw;
-    max-width: 400px;
-    align-items: center;
-    transition: transform .3s;
-    min-width: 110px;
-    margin-left: 2vw;
-    animation: fadeInLeft;
-    animation-duration: 1s;
+  display: flex;
+  width: 30vw;
+  max-width: 400px;
+  align-items: center;
+  transition: transform 0.3s;
+  min-width: 110px;
+  margin-left: 2vw;
+  animation: fadeInLeft;
+  animation-duration: 1s;
 }
 
 .profile {
-    transition: transform .3s;
-    border-radius: 10%;
-    width: 95%;
-    margin: auto;
+  transition: transform 0.3s;
+  border-radius: 10%;
+  width: 95%;
+  margin: auto;
 }
 
 .space .textProfile {
-    padding-right: 2vw;
+  padding-right: 2vw;
 }
 
 .space .textProfile .text {
-    text-align: right;
-    font-size: 35px;
-    animation: fadeInRight;
-    animation-duration: 1s;
+  text-align: right;
+  font-size: 35px;
+  animation: fadeInRight;
+  animation-duration: 1s;
 }
 
 .space .textProfile .textfun {
-    text-align: right;
-    font-size: 35px;
-    animation: fadeInRight;
-    animation-duration: 1s;
+  text-align: right;
+  font-size: 35px;
+  animation: fadeInRight;
+  animation-duration: 1s;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 1vw;
-    animation: fadeInDown;
-    animation-duration: 1s;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1vw;
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
 .navbar .navlist {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-right: 2vw;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 2vw;
 }
 
 .navbar .navlist .navitem {
-    margin: 1vw;
-    font-size: large;
-    font-size: 24px;
-    transition: transform 0.3s;
-    color: #000050;
+  margin: 1vw;
+  font-size: large;
+  font-size: 24px;
+  transition: transform 0.3s;
+  color: #000050;
 }
 
 .navbar .navlist .navitem:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .navbar .navlist .naviteminv {
-    margin: 1vw;
-    font-size: large;
-    font-size: 24px;
-    transition: transform 0.3s;
-    color: #ffebe4;
+  margin: 1vw;
+  font-size: large;
+  font-size: 24px;
+  transition: transform 0.3s;
+  color: #ffebe4;
 }
 
 .navbar .navlist .naviteminv:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .modebutton {
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    background: #000050;
-    border-radius: 1vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-    font-size: 24px;
-    color: #fff;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  background: #000050;
+  border-radius: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  font-size: 24px;
+  color: #fff;
 }
 
 .modebuttoninv {
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    background: #ffebe4;
-    border-radius: 1vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-    font-size: 24px;
-    color: black;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  background: #ffebe4;
+  border-radius: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  font-size: 24px;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
-    .navlist {
-      display: none !important;
-    }
+  .navlist {
+    display: none !important;
+  }
 
-
-.modebutton {
+  .modebutton {
     border: none;
     padding: 1vw;
     font: inherit;
@@ -165,10 +164,9 @@
     margin-top: 20vw;
     color: white;
     font-size: 200%;
+  }
 
-}
-
-.modebuttoninv {
+  .modebuttoninv {
     border: none;
     padding: 0;
     font: inherit;
@@ -179,9 +177,9 @@
     margin-top: 20vw;
     font-size: 200%;
     font-size: 200%;
-}
+  }
 
-.space {
+  .space {
     width: 100%;
     height: 100%;
     display: flex;
@@ -189,56 +187,55 @@
     justify-content: center;
     padding: 20px;
     align-items: center;
-}
+  }
 
-.space .borderprofile {
+  .space .borderprofile {
     display: flex;
     width: 80vw;
     max-width: 270px;
     align-items: center;
-    transition: transform .3s;
+    transition: transform 0.3s;
     min-width: 110px;
     margin-bottom: 5vh;
-}
+  }
 
-.space .textProfile .text {
+  .space .textProfile .text {
     text-align: center;
     font-size: 20px;
     color: #000050;
-}
+  }
 
-.space .textProfile .textfun {
+  .space .textProfile .textfun {
     text-align: center;
     font-size: 20px;
-    color: #ffebe4; 
-}
+    color: #ffebe4;
+  }
 
-.space .textProfile {
+  .space .textProfile {
     margin-top: 10vw;
-}
+  }
 
-.header {
+  .header {
     background-color: #ffffff;
     background-size: cover;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:100vh;
+    height: 100vh;
     flex-direction: column;
     /*background-image: linear-gradient(130deg, #000050 50%, #fff 50%);*/
-}
+  }
 
-.funheader {
+  .funheader {
     background-color: #000;
     background-size: cover;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:100vh;
+    height: 100vh;
     flex-direction: column;
     /*background-image: linear-gradient(230deg, #ff0000 50%, #000 50%);*/
-}
-
+  }
 }

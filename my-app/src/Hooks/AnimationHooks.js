@@ -12,6 +12,11 @@ export function useAnimatedVisibility(rootMargin, initialVariants, transition) {
     }
   }, [inView, controls]);
 
+  // Função para resetar as animações
+  const resetAnimation = () => {
+    controls.start('hidden');
+  };
+
   const animateSettings = {
     animate: controls,
     initial: 'hidden',
@@ -19,5 +24,5 @@ export function useAnimatedVisibility(rootMargin, initialVariants, transition) {
     transition: transition,
   };
 
-  return { ref, animateSettings };
+  return { ref, animateSettings, resetAnimation };
 }

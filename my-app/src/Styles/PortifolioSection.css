@@ -1,99 +1,99 @@
 .portifoliosection {
-    min-height: 10vw;
-    background-color: #ffffff;
-    background-size: cover;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2vw;
-    display: flex;
-    flex-direction: column;
+  min-height: 10vw;
+  background-color: #ffffff;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .funportifoliosection {
-    min-height: 10vw;
-    background-color: #000000;
-    background-size: cover;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2vw;
-    display: flex;
-    flex-direction: column;
+  min-height: 10vw;
+  background-color: #000000;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .portifoliosection .title {
-    font-size: 140%;
-    text-align: left;
+  font-family: 'RobotoTitle', sans-serif;
+  font-size: 140%;
+  text-align: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 1px solid #000050;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  color: #000050;
+}
+
+.funportifoliosection .title {
+  font-family: 'RobotoTitle', sans-serif;
+  font-size: 140%;
+  text-align: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  border-bottom: 1px solid #ffebe4;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  color: #ffebe4;
+}
+
+@media screen and (max-width: 768px) {
+  .portifoliosection {
+    min-height: 10vw;
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+  }
+
+  .funportifoliosection {
+    min-height: 10vw;
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+  }
+
+  .portifoliosection .title {
+    font-size: 30px;
+    text-align: center;
     margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 2vw;
     border-bottom: 1px solid #000050;
     font-weight: bold;
     padding-bottom: 1vw;
     color: #000050;
-}
+  }
 
-.funportifoliosection .title {
-    font-size: 140%;
-    text-align: left;
+  .funportifoliosection .title {
+    font-size: 30px;
+    text-align: center;
     margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 2vw;
     border-bottom: 1px solid #ffebe4;
     font-weight: bold;
     padding-bottom: 1vw;
-    color:#ffebe4;
-}
-
-@media screen and (max-width: 768px) {
-
-    .portifoliosection {
-        min-height: 10vw;
-        background-color: #ffffff;
-        background-size: cover;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2vh;
-    }
-    
-    .funportifoliosection {
-        min-height: 10vw;
-        background-color: #000;
-        background-size: cover;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2vh;
-    }
-    
-    .portifoliosection .title {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 2vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 2vw;
-        border-bottom: 1px solid #000050;
-        font-weight: bold;
-        padding-bottom: 1vw;
-        color: #000050;
-    }
-    
-    .funportifoliosection .title {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 2vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 2vw;
-        border-bottom: 1px solid #ffebe4;
-        font-weight: bold;
-        padding-bottom: 1vw;
-        color:#ffebe4;
-    }
-
+    color: #ffebe4;
+  }
 }
