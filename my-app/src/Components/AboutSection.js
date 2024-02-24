@@ -21,21 +21,21 @@ export default function AboutSection(props) {
   // Variável que configura a animação do título
   const { ref: refTitle, animateSettings: animateSettingsTitle } =
     useAnimatedVisibility(
-      '100px 0px',
-      { hidden: { opacity: 0, x: 400 }, visible: { opacity: 1, x: 0 } },
+      '-100px 0px',
+      { hidden: { opacity: 0, x: 250 }, visible: { opacity: 1, x: 0 } },
       { duration: 1, delay: 0.0 },
     );
   // Variável que configura a animação do primeiro parágrafo
   const { ref: ref, animateSettings: animateSettings } = useAnimatedVisibility(
-    '100px 0px',
-    { hidden: { opacity: 0, x: -400 }, visible: { opacity: 1, x: 0 } },
+    '-100px 0px',
+    { hidden: { opacity: 0, x: -250 }, visible: { opacity: 1, x: 0 } },
     { duration: 1, delay: 0.5 },
   );
   // Variável que configura a animação do segundo parágrafo (é invertida)
   const { ref: refInv, animateSettings: animateSettingsInv } =
     useAnimatedVisibility(
-      '100px 0px',
-      { hidden: { opacity: 0, x: 400 }, visible: { opacity: 1, x: 0 } },
+      '-100px 0px',
+      { hidden: { opacity: 0, x: 250 }, visible: { opacity: 1, x: 0 } },
       { duration: 1, delay: 0.75 },
     );
 

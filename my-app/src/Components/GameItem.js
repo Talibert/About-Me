@@ -7,7 +7,7 @@ import '../Styles/GameSection.css';
 const GameItem = ({ src, alt, preference }) => {
   // Variável que configura a animação do item
   const { ref: ref, animateSettings: animateSettings } = useAnimatedVisibility(
-    '0px 0px',
+    '-100px 0px',
     { hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 } },
     { duration: 1, delay: 0.5 },
   );

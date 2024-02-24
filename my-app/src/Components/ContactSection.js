@@ -11,9 +11,9 @@ export default function ContactSection(props) {
   // Variável que configura a animação do título
   const { ref: refTitle, animateSettings: animateSettingsTitle } =
     useAnimatedVisibility(
-      '-200px 0px',
+      '-100px 0px',
       {
-        hidden: { opacity: 0, x: 400 },
+        hidden: { opacity: 0, x: 250 },
         visible: { opacity: 1, x: 0 },
       },
       { duration: 1, delay: 0.0 },

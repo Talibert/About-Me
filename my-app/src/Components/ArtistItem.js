@@ -1,31 +1,16 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useAnimatedVisibility } from '../Hooks/AnimationHooks';
 import '../Styles/ArtistSection.css';
 
 // Criando uma função que irá receber o nome da tecnologia, a descrição, a imagem e o level
 const ArtistItem = ({ src, alt, name }) => {
-  // Configuração do hook useInView para detectar a visibilidade do elemento na tela
-  const { ref, inView } = useInView({ trigger: true });
-  // Configuração do hook useAnimation para controlar as animações do framer-motion
-  const controls = useAnimation();
-  // Criando um objeto para armazenar as configurações da animação
-  const animateSettings = {
-    animate: controls,
-    initial: 'hidden',
-    variants: {
-      hidden: { opacity: 0, y: 400 },
-      visible: { opacity: 1, y: 0 },
-    },
-    transition: { duration: 1 },
-  };
-
-  // useEffect que irá identificar a visibilidade do elemento e alterar sua animação
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [inView, controls]); // O UseEffect será chamado sempre que inView ou controls forem alterados
+  // Variável que configura a animação do item
+  const { ref: ref, animateSettings: animateSettings } = useAnimatedVisibility(
+    '-100px 0px',
+    { hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 } },
+    { duration: 1, delay: 0.5 },
+  );
 
   return (
     <div className="artistitem" ref={ref}>
